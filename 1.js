@@ -16,7 +16,14 @@ function getVowels(){
   const alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
   let vowels
 
-  // Your code here
+ vowels = [
+  alphabet[0],
+  alphabet[4],
+  alphabet[8],
+  alphabet[alphabet.length-12],
+  alphabet[alphabet.length-6],
+  alphabet[alphabet.length-2],
+ ]
 
   return vowels
 }
