@@ -9,11 +9,14 @@ Given an array containing the alphanumeric alphabet, write code that returns an 
 
 */
 
-function getSpanishAlphabet(){
+function getSpanishAlphabet() {
   const alphaNumericAlphabet = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "&"]
   let spanishAlphabet
+  let numberlessAlphabet = alphaNumericAlphabet.slice(10)
+  spanishAlphabet = numberlessAlphabet.slice(0, 3).concat(["ch"]).concat(numberlessAlphabet.slice(3, 12)).concat(["ll"]).concat(numberlessAlphabet.slice(12, 14)).concat(["ñ"]).concat(numberlessAlphabet.slice(14, 26)); 
 
-  // Your code here
+  console.log(spanishAlphabet)
+
 
   return spanishAlphabet
 }
