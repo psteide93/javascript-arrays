@@ -6,11 +6,14 @@ Given an array containing the english alphabet, write code that returns an array
 
 */
 
-function getAlphaNumericAlphabet(){
+function getAlphaNumericAlphabet() {
   const alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+  
   let alphaNumericAlphabet
-
-  // Your code here
+  
+  let numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9,]
+ 
+  alphaNumericAlphabet = numbers.concat(alphabet).concat(["&"]) 
 
   return alphaNumericAlphabet
 }
